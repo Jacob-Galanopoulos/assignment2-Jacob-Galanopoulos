@@ -1,7 +1,7 @@
 import unittest
-import Assignment.sumit as sumit
+import Assignment.collapse as collapse
 
-class SumitTest(unittest.TestCase):
+class CollapseTest(unittest.TestCase):
 
     def setUp(self):
         pass
@@ -12,5 +12,5 @@ class SumitTest(unittest.TestCase):
     def test100_010_ShouldCollapseOneGoodDigit(self):
         value = '5'
         expectedResult = '5'
-        actualResult = sumit.sumit(value)
+        actualResult = collapse.collapse(value)
         self.assertEqual(expectedResult, actualResult)
