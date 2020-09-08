@@ -2,9 +2,6 @@ def collapse(value):
     total = 0
     remainingDigits = len(value)
     
-    if remainingDigits == 1:
-        return value
-    
     if remainingDigits < 1 or remainingDigits > 50:
         return None
     
@@ -14,6 +11,9 @@ def collapse(value):
             return None
     except:
         return None
+    
+    if remainingDigits == 1:
+        return value
     
     while remainingDigits > 1:
         total = 0

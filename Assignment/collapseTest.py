@@ -80,3 +80,9 @@ class CollapseTest(unittest.TestCase):
         expectedResult = None
         actualResult = collapse.collapse(value)
         self.assertEqual(expectedResult, actualResult)
+        
+    def test200_060_ShouldNotCollapseOneBadSpace(self):
+        value = ' '
+        expectedResult = None
+        actualResult = collapse.collapse(value)
+        self.assertEqual(expectedResult, actualResult)
